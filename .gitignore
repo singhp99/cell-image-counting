@@ -218,3 +218,42 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ------------------------------------------------------------------
+# Project-specific
+# ------------------------------------------------------------------
+
+# Personal AI-assistant config (kept local, not shared with collaborators)
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+
+# Datasets: download locally, never commit (keep an optional README describing sources)
+data/*
+!data/README.md
+*.zip
+*.tar
+*.tar.gz
+
+# Model weights and checkpoints
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.safetensors
+
+# Experiment tracking / training logs
+runs/
+wandb/
+mlruns/
+lightning_logs/
+outputs/
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

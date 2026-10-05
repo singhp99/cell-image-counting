@@ -1,0 +1,12 @@
+# Conda env for local development.
+#   conda env create -f environment.yml && conda activate cellcount
+#   python -m ipykernel install --user --name cellcount --display-name "Python (cellcount)"
+# Update after dependency changes: conda env update -f environment.yml --prune
+name: cellcount
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12  # same minor version as Google Colab
+  - pip
+  - pip:
+      - -e .[dev]
